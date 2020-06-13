@@ -33,6 +33,12 @@ export class AppComponent {
 
       this.checkIsWinner();
 
+      let drawGame = ! this.itemArray.includes('empty');
+      if(drawGame){
+        this.winMessage='Game Draw';
+      }
+
+
   }
 
   checkIsWinner(){
